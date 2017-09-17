@@ -29,7 +29,7 @@ class TestAll(unittest.TestCase):
 	def test_getWinners (self):
 		assert getWinners({}) == []
 		assert getWinners({'Juan': 10, 'Carlos': 15, 'Marta': 5}) == [('Carlos', 15)]
-		assert getWinners({'Juan': 20, 'Carlos': 20, 'Marta': 5}) == [('Juan', 20), ('Carlos', 20)]
+		assert getWinners({'Juan': 20, 'Carlos': 20, 'Marta': 5}).sort() == [('Juan', 20), ('Carlos', 20)].sort()
 
 	def test_initScoreboard (self):
 		assert initScoreboard([]) == {}
