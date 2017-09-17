@@ -1,6 +1,7 @@
 # Tutti Frutti Python
 
-Proyecto 1 de Programación II, LCC.
+Proyecto 1 de Programación II, LCC250, 2017.
+
 Marengo Juan Pablo y Moreno Rodrigo.
 
 ## RUN
