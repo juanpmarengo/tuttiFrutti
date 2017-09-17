@@ -1,3 +1,5 @@
+# Proyecto 1 - Programación II LCC250 2017 - Marengo Juan Pablo - Morengo Rodrigo
+
 #!/usr/local/bin/python
 # -*- coding: utf-8 -*-
 import os, sys, random
