@@ -130,6 +130,13 @@ def congratsWinner (scoreBoard):
 def clearScreen ():
 	os.system('cls' if os.name == 'nt' else 'clear')
 
+# Representamos una tabla de puntuaciones con un diccionario, cuyas claves son los nombres de los jugadores (strings) y sus valores son los puntajes totales respectivos a cada jugador (números enteros).
+# endGame : dict -> None
+# Esta función se encarga de mostrar la pantalla de final de juego.
+def endGame (scoreBoard):
+	printScoreboard(scoreBoard)
+	congratsWinner(scoreBoard)
+
 # Representamos una tabla de puntuaciones con un diccionario, cuyas claves son los nombres de los jugadores (strings) y sus valores son los puntajes totales respectivos a cada jugador (números enteros)
 # getWinners : dict -> (tuple list)
 # El argumento de esta función es una tabla de puntuaciones, y lo que se encarga de hacer, es devolver una lista de el/los jugador/es con el mayor puntaje.
@@ -173,13 +180,6 @@ def initGame (players, maxPoints, categories, alphabet):
 		if isThereAWinner(scoreBoard, maxPoints):
 			endGame(scoreBoard)
 			return
-
-# Representamos una tabla de puntuaciones con un diccionario, cuyas claves son los nombres de los jugadores (strings) y sus valores son los puntajes totales respectivos a cada jugador (números enteros).
-# endGame : dict -> None
-# Esta función se encarga de mostrar la pantalla de final de juego.
-def endGame (scoreBoard):
-	printScoreboard(scoreBoard)
-	congratsWinner(scoreBoard)
 
 # Representamos jugadores por sus nombres con una lista de strings, y una tabla de puntuaciones con un diccionario.
 # initScoreboard : (string list) -> dict
